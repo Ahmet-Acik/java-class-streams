@@ -16,4 +16,11 @@ public class MessageProcessorTest {
         assertEquals("HELLO WORLD", processor.transformMessage("Hello World"));
         assertNull(processor.transformMessage(null));
     }
+    @Test
+    public void testProcessMessage() {
+        MessageProcessor processor = new MessageProcessor();
+        assertEquals("Processed: Hello World", processor.processMessage("Hello World"));
+        assertThrows(IllegalArgumentException.class, () -> processor.processMessage(null));
+    }
+
 }
