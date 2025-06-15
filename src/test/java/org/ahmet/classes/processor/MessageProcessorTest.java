@@ -115,4 +115,48 @@ public class MessageProcessorTest {
         assertNull(result);
     }
 
+    @Test
+    public void testTransformMessageWithNullMessage() {
+        Message result = processor.transformMessage(null);
+        assertNull(result);
+    }
+
+    // Test for truncateMessage with excessive length : Meeting scheduled for 3 PM, please can you confirm the attendance?
+    @Test
+    public void testTruncateMessageWithExcessiveLength() {
+        Message message = new Message("Meeting scheduled for 3 PM, please can you confirm the attendance?", "Alice", "Bob", System.currentTimeMillis());
+        Message result = processor.truncateMessage(message, 50);
+        assertNotNull(result);
+        assertEquals("Meeting scheduled for 3 PM, please can you confirm", result.getContent());
+    }
+
+@Test
+public void testReverseMessageWithEmptyContent() {
+    Message message = new Message("", "Alice", "Bob", System.currentTimeMillis());
+    Message result = processor.reverseMessage(message);
+    assertNotNull(result);
+    assertEquals("", result.getContent());
+}
+
+@Test
+public void testDecodeMessageWithNegativeShift() {
+    Message message = new Message("Khoor Zruog", "Alice", "Bob", System.currentTimeMillis());
+    Message result = processor.decodeMessage(message, -3);
+    assertNull(result);
+}
+
+@Test
+public void testEncodeMessageWithSpecialCharacters() {
+    Message message = new Message("Hello, World!", "Alice", "Bob", System.currentTimeMillis());
+    Message result = processor.encodeMessage(message, 3);
+    assertNotNull(result);
+    assertEquals("Khoor, Zruog!", result.getContent());
+}
+
+@Test
+public void testFormatMessageWithNullFormat() {
+    Message message = new Message("Meeting", "Alice", "Bob", System.currentTimeMillis());
+    assertThrows(IllegalArgumentException.class, () -> processor.formatMessage(message, null));
+}
+
 }
