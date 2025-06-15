@@ -1,4 +1,4 @@
-package org.ahmet.classes;// AuditLogger.java
+package org.ahmet.classes.processor;// AuditLogger.java
 import java.util.ArrayList;
 import java.util.List;
 

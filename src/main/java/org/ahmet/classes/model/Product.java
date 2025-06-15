@@ -1,5 +1,5 @@
 // Product.java
-package org.ahmet.classes;
+package org.ahmet.classes.model;
 
 public class Product {
     private String name;

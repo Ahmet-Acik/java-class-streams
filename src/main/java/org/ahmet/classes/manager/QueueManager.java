@@ -1,5 +1,5 @@
 // QueueManager.java
-package org.ahmet.classes;
+package org.ahmet.classes.manager;
 
 import java.util.LinkedList;
 import java.util.Queue;

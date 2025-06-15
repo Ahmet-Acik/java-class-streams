@@ -1,5 +1,7 @@
 // ProductManager.java
-package org.ahmet.classes;
+package org.ahmet.classes.manager;
+
+import org.ahmet.classes.model.Product;
 
 import java.util.List;
 import java.util.stream.Collectors;

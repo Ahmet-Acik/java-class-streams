@@ -1,4 +1,4 @@
-package org.ahmet.classes;// UserManager.java
+package org.ahmet.classes.manager;// UserManager.java
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,5 +1,7 @@
 // EmployeeManager.java
-package org.ahmet.classes;
+package org.ahmet.classes.manager;
+
+import org.ahmet.classes.model.Employee;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -29,5 +31,6 @@ public class EmployeeManager {
                 .average()
                 .orElse(0.0);
     }
+
 }
 

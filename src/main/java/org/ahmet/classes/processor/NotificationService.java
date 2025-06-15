@@ -1,5 +1,5 @@
 // NotificationService.java
-package org.ahmet.classes;
+package org.ahmet.classes.processor;
 
 public class NotificationService {
     public void sendEmail(String email, String message) {

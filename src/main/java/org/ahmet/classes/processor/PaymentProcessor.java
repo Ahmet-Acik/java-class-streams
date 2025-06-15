@@ -1,5 +1,5 @@
 // PaymentProcessor.java
-package org.ahmet.classes;
+package org.ahmet.classes.processor;
 
 public class PaymentProcessor {
     public boolean validatePayment(double amount) {

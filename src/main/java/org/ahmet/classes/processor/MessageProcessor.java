@@ -1,4 +1,4 @@
-package org.ahmet.classes;
+package org.ahmet.classes.processor;
 
         public class MessageProcessor {
             public String filterMessage(String message, String keyword) {

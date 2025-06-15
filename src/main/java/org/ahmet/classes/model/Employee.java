@@ -1,4 +1,4 @@
-package org.ahmet.classes;
+package org.ahmet.classes.model;
 
 public class Employee {
     private String name;

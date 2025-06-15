@@ -1,5 +1,5 @@
 // OrderProcessor.java
-package org.ahmet.classes;
+package org.ahmet.classes.processor;
 
 import java.util.List;
 

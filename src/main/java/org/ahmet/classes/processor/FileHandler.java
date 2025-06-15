@@ -1,5 +1,5 @@
 // FileHandler.java
-package org.ahmet.classes;
+package org.ahmet.classes.processor;
 
 import java.io.IOException;
 import java.nio.file.Files;
