@@ -107,4 +107,12 @@ public class MessageProcessorTest {
         assertNotNull(result);
         assertEquals("Meeting scheduled for 3 PM", result.getContent());
     }
+
+    @Test
+    public void testFilterMessageWithNullKeyword() {
+        Message message = new Message("Meeting scheduled for 3 PM", "Alice", "Bob", System.currentTimeMillis());
+        Message result = processor.filterMessage(message, null);
+        assertNull(result);
+    }
+
 }

@@ -294,4 +294,5 @@ public class MessageProcessor {
         String formattedContent = String.format(format, message.getContent());
         return new Message(formattedContent, message.getSender(), message.getReceiver(), message.getTimestamp());
     }
+
 }
