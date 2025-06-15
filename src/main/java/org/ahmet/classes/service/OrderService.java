@@ -1,15 +1,15 @@
 // OrderManager.java
-package org.ahmet.classes.manager;
+package org.ahmet.classes.service;
 
 import org.ahmet.classes.model.Order;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class OrderManager {
+public class OrderService {
     private List<Order> orders;
 
-    public OrderManager(List<Order> orders) {
+    public OrderService(List<Order> orders) {
         this.orders = orders;
     }
 

@@ -1,8 +1,8 @@
-package org.ahmet.classes.manager;// UserManager.java
+package org.ahmet.classes.service;// UserManager.java
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserManager {
+public class UserService {
     private Map<Integer, String> users = new HashMap<>();
 
     public void addUser(int id, String name) {

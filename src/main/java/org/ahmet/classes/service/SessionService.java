@@ -1,11 +1,11 @@
 // SessionManager.java
-package org.ahmet.classes.manager;
+package org.ahmet.classes.service;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class SessionManager {
+public class SessionService {
     private Map<String, String> sessions = new HashMap<>();
 
     public String createSession(String userId) {

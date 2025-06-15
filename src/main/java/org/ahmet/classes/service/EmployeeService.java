@@ -1,15 +1,15 @@
 // EmployeeManager.java
-package org.ahmet.classes.manager;
+package org.ahmet.classes.service;
 
 import org.ahmet.classes.model.Employee;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class EmployeeManager {
+public class EmployeeService {
     private List<Employee> employees;
 
-    public EmployeeManager(List<Employee> employees) {
+    public EmployeeService(List<Employee> employees) {
         this.employees = employees;
     }
 

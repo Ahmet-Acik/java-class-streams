@@ -1,10 +1,10 @@
 // InventoryManager.java
-package org.ahmet.classes.manager;
+package org.ahmet.classes.service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class InventoryManager {
+public class InventoryService {
     private Map<String, Integer> inventory = new HashMap<>();
 
     public void addItem(String item, int quantity) {
